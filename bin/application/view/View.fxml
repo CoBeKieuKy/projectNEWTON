@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="816.0" prefWidth="1188.0" style="-fx-background-color: #008ba3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Controller">
+   <children>
+      <AnchorPane layoutY="62.0" prefHeight="511.0" prefWidth="1187.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="511.0" fitWidth="364.0" layoutX="822.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/newton.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="25.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Second Newton 's Law of Motions:&#10;&#10;&#9;The acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object." wrappingWidth="328.6708984375">
+               <font>
+                  <Font name="Arial Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F = m.a" underline="true">
+               <font>
+                  <Font size="72.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+            <Text layoutX="50.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F : the scalar of vector F- the force applying to object&#10;m : the mass of the object.&#10;a : the acceleration that the object gets.">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="298.0" fitWidth="296.0" layoutX="471.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/law.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button fx:id="runButton" layoutX="22.0" layoutY="16.0" mnemonicParsing="false" text="Run" underline="true" />
+      <Button fx:id="resetButton" layoutX="78.0" layoutY="16.0" mnemonicParsing="false" text="Reset" underline="true" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="16.0" />
+      <TextField fx:id="massInput" layoutX="535.0" layoutY="16.0" promptText="Mass (kg)" />
+      <ImageView fitHeight="31.0" fitWidth="200.0" layoutX="489.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/mass.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="31.0" layoutX="242.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/lightning.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="forceInput" layoutX="285.0" layoutY="16.0" promptText="Force (N)" />
+      <TextField fx:id="aOutput" layoutX="62.0" layoutY="764.0" prefHeight="31.0" prefWidth="163.0" promptText="Acce‎leration (m/s^2)" />
+      <Pane layoutY="571.0" prefHeight="177.0" prefWidth="1187.0" style="-fx-background-color: #585858;">
+         <children>
+            <ImageView fx:id="car" fitHeight="165.0" fitWidth="268.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/car.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
+      <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="22.0" layoutY="764.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/velocity.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
